@@ -3,5 +3,7 @@ from django.views.generic import ListView
 
 # Create your views here.
 
-class LaningPageView(ListView):
-    template_name = 'landingapp/landing.html'
+
+def landingpage(request):
+    return render(request, 'landingapp/landing.html')
+    
