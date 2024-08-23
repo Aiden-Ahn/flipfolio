@@ -14,6 +14,8 @@ RUN echo "SECRET_KEY=django-insecure-a+8!pinn*(=toyep3p5ncm0k74(kxq6#c5*6_f(1(oa
 
 RUN python manage.py migrate
 
+RUN python manage.py collectstatic
+
 EXPOSE 8000
  
 CMD ["gunicorn","flipfolio.wsgi","--bind","0.0.0.0:8000"]
