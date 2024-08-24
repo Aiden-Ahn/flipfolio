@@ -10,6 +10,8 @@ RUN pip install -r requirements.txt
 
 RUN pip install gunicorn
 
+RUN pip install numpy
+
 RUN echo "SECRET_KEY=django-insecure-a+8!pinn*(=toyep3p5ncm0k74(kxq6#c5*6_f(1(oatj&@mp=" > .env
 
 RUN python manage.py migrate
